@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# Copyright, 2014 Stefano Rivera.
+# Distributed under the ISC license, see LICENSE.rst
+
 import argparse
 import curses
 import errno
