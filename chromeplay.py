@@ -81,6 +81,8 @@ def control_loop(mc):
                 hours, minutes = divmod(minutes, 60)
                 stdscr.addstr(1, 0, "%02i:%02i:%02i"
                                     % (hours, minutes, seconds))
+                if mc.status.player_state == 'IDLE':
+                    break
                 mc.update_status()
             stdscr.move(2, 0)
             stdscr.refresh()
