@@ -28,6 +28,7 @@ def play(url):
                 cast.quit_app()
                 time.sleep(1)
 
+            time.sleep(1)
             cast.play_media(url, "video/mp4")
         except socket.error as e:
             if e.errno != errno.EFAULT:
